@@ -184,7 +184,7 @@ while True:
     dealer_hand.add_card(deck.deal())
 
     # Set up the Player's chips
-    player_chips = Chips()  # remember the default value is 100
+    player_chips = Chips()
     print('You have 100 chips!')
 
     # Prompt the Player for their bet
@@ -193,7 +193,7 @@ while True:
     # Show cards (but keep one dealer card hidden)
     show_some(player_hand, dealer_hand)
 
-    while playing:  # recall this variable from our hit_or_stand function
+    while playing:
 
         # Prompt for Player to Hit or Stand
         hit_or_stand(deck, player_hand)
